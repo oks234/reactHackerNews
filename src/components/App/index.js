@@ -143,8 +143,6 @@ class App extends Component {
       results[searchKey].hits
     ) || [];
 
-    console.log({ results });
-
     return (
       <div className="page">
         <div className="interactions">
@@ -161,9 +159,9 @@ class App extends Component {
               <p>Something went wrong.</p>
             </div>
           : <Table
-            list={list}
-            onDismiss={this.onDismiss}
-          />
+              list={list}
+              onDismiss={this.onDismiss}
+            />
         }
         <div className="interactions">
           <Button onClick={() => this.fetchSearchTopStories(searchKey, page + 1)}>
