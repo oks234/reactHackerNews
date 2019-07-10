@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Loading } from '../Loading';
 import './index.css';
 
 export const Button = ({
@@ -14,6 +15,13 @@ export const Button = ({
   >
     {children}
   </button>;
+
+const withLoading = (Component) => ({ isLoading, ...rest }) =>
+  isLoading
+    ? <Loading />
+    : <Component { ...rest } />
+
+export const ButtonWithLoading = withLoading(Button);
 
 Button.defaultProps = {
   className: '',

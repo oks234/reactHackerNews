@@ -1,4 +1,4 @@
-[개발 참고 링크](https://realhanbit.co.kr/books/87/pages/1572/read)
+[개발 참고 링크](https://realhanbit.co.kr/books/87/pages/1574/read)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

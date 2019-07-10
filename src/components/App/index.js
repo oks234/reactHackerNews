@@ -10,8 +10,7 @@ import {
   PARAM_PAGE,
   PARAM_HPP,
 } from '../../constants';
-import { Loading } from '../Loading';
-import { Button } from '../Button';
+import { Button, ButtonWithLoading } from '../Button';
 import { Search } from '../Search';
 import { Table } from '../Table';
 
@@ -170,12 +169,11 @@ class App extends Component {
             />
         }
         <div className="interactions bottom">
-          { isLoading
-            ? <Loading />
-            : <Button onClick={() => this.fetchSearchTopStories(searchKey, page + 1)}>
-                More
-              </Button>
-          }
+          <ButtonWithLoading
+            isLoading={isLoading}
+            onClick={() => this.fetchSearchTopStories(searchKey, page + 1)}>
+            More
+          </ButtonWithLoading>
         </div>
       </div>
     );
