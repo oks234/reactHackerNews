@@ -4,7 +4,8 @@
 
 .table-header {
   display: flex;
-  padding: 0;
+  margin: 0 10px;
+  padding: 0 10px;
   line-height: 24px;
   font-size: 16px;
   justify-content: space-between;
